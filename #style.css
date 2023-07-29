@@ -1,73 +1,307 @@
-.titulo-pagina{
-text-align: center;
-font-style: italic;
-font-size: 3em;
-font-weight: 900;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color:brown;
-margin: 10px
-
+.titulo-pagina {
+    text-align: center;
+    font-size: italic;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+    margin: 10px;
 }
 
 
-.nome-propriedade{
 
+
+
+.nome-propriedade {
     font-size: 2em;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:blue;
+    color: blue;
     padding: 20px;
+
 }
 
-.valor-propriedade{
+.valor-propriedade {
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black;
+    color: black;
     padding: 30px;
-
 }
 
-.bloco-1{
-    background-color: lightblue;
+.bloco-1 {
+    background-color: aqua;
     height: 150px;
     width: 150px;
     text-align: center;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
-
-
-
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*ESTES COMANDOS CENTRALIZA O NÚMERO DO BLOCO*/
 }
-.bloco-2{
-    background-color: lightgreen;
+
+.bloco-2 {
+    background-color: red;
     height: 150px;
     width: 150px;
     text-align: center;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
-
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
 }
-.bloco-3{
-    background-color: lightyellow;
+
+.bloco-3 {
+    background-color: yellowgreen;
     height: 150px;
     width: 150px;
     text-align: center;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+/* Flex-direction - define a direção do eixo principal*/
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    /* flex box*/
+    background-color: bisque;
+    padding: 16px;
+    height: 500px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*ESTES COMANDOS CENTRALIZA O BLOCO*/
+}
+
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    /* flex box*/
+    background-color: bisque;
+    padding: 16px;
+    height: 500px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+
+.container-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex box*/
+    background-color: bisque;
+    padding: 16px;
+    height: 500px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.container-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    /* flex box*/
+    background-color: bisque;
+    padding: 16px;
+    height: 500px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.container-justify-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: aquamarine;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-justify-flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: aquamarine;
+    height: 500px;
+    padding: 16px;
+
 
 }
 
-    .contanier-row{
-     display: flex;
-     flex-direction: row;
-     /* indiferente */
-     background-color: #f9eac3 ;
-     padding:16px;
-     height: 500px;
+.container-justify-flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: aquamarine;
+    height: 500px;
+    padding: 16px;
+}
 
+.container-justify-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aquamarine;
+    height: 500px;
+    padding: 16px;
+}
 
-    }
+.container-justify-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: aquamarine;
+    height: 500px;
+    padding: 16px;
+}
+
+.container-justify-space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    height: 500px;
+    padding: 16px;
+
+}
+
+.container-align-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: darkgoldenrod;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: darkgoldenrod;
+    padding: 16px;
+    height: 500px;
+}
+.bloco-1-sem-altura {
+    background-color: aqua;
+    /*height: 150px; retirado sem altura*/
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*ESTES COMANDOS CENTRALIZA O NÚMERO DO BLOCO*/
+}
+
+.bloco-2-sem-altura {
+    background-color: red;
+    /*height: 150px; retirado sem altura*/
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.bloco-3-sem-altura {
+    background-color: yellowgreen;
+    /*height: 150px; retirado sem altura*/
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.container-align-stretch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgb(121, 11, 184);
+    padding: 16px;
+    height: 500px; 
+}
+.bloco-1-fontes-diferentes {
+    background-color: aqua;
+    /*height: 150px; retirado sem altura*/
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*ESTES COMANDOS CENTRALIZA O NÚMERO DO BLOCO*/
+}
+
+.bloco-2-fontes-diferentes {
+    background-color: red;
+    /*height: 150px; retirado sem altura*/
+    width: 150px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.bloco-3-fontes-diferentes {
+    background-color: yellowgreen;
+    /*height: 150px; retirado sem altura*/
+    width: 150px;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.container-align-balise{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(184, 181, 11);
+    padding: 16px;
+    height: 500px; 
+}
